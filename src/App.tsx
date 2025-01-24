@@ -2,14 +2,11 @@ import { BrowserRouter } from "react-router-dom";
 
 import {
   About,
-  Contact,
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
   Tech,
   Works,
-  StarsCanvas,
 } from "./components";
 import { useEffect } from "react";
 import { config } from "./constants/config";
@@ -32,11 +29,11 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
+        {/* <Feedbacks />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
-        </div>
+        </div> */}
       </div>
     </BrowserRouter>
   );
